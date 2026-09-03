@@ -1,0 +1,290 @@
+/* ============================================
+   HydroTech — Guía de marca
+   Tokens: Naranja #FF6A00 · Plata #C0C0C0 · Negro #0D0D0D
+   ============================================ */
+
+:root {
+  --orange: #FF6A00;
+  --orange-dim: #C75300;
+  --silver: #C0C0C0;
+  --black: #0D0D0D;
+  --surface: #161616;
+  --surface-2: #1E1E1E;
+  --border: rgba(192, 192, 192, 0.16);
+  --ink: #F3F2EF;
+  --ink-muted: #A9A9A6;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--black);
+  color: var(--ink);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+
+h3 { font-size: 1.15rem; font-weight: 700; }
+
+a { color: var(--orange); }
+
+.section { padding: 6rem 0; border-bottom: 1px solid var(--border); }
+.section-alt { background: var(--surface); }
+.footer { border-bottom: none; padding-bottom: 3rem; }
+
+.eyebrow-bar {
+  display: inline-block;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--orange);
+  color: var(--silver);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.kicker {
+  color: var(--orange);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.body-text { color: var(--ink-muted); margin-bottom: 1.1rem; max-width: 62ch; }
+.lead-text { color: var(--ink-muted); font-size: 1.08rem; max-width: 52ch; margin-bottom: 1.75rem; }
+
+/* ---------- Navbar ---------- */
+#navPrincipal {
+  background: rgba(13, 13, 13, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.navbar-brand { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--ink); font-size: 1.2rem; }
+.navbar-brand em { font-style: normal; color: var(--orange); }
+.nav-link { color: var(--ink-muted) !important; font-size: 0.92rem; padding: 0.5rem 0.85rem !important; }
+.nav-link:hover, .nav-link.active { color: var(--ink) !important; }
+
+/* ---------- Hero ---------- */
+.hero {
+  padding-top: 9rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+.blueprint-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(192,192,192,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(192,192,192,0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(ellipse at center, black 10%, transparent 70%);
+  pointer-events: none;
+}
+.hero h1 {
+  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+.hero-logo { max-width: 380px; }
+.btn-scroll {
+  display: inline-block;
+  background: var(--orange);
+  color: #14100b;
+  font-weight: 700;
+  padding: 0.75rem 1.6rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.btn-scroll:hover { background: #ff7f1f; color: #14100b; }
+
+/* ---------- Introducción ---------- */
+.value-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  background: var(--surface);
+}
+.value-card-item { display: flex; gap: 1rem; align-items: baseline; margin-bottom: 1.1rem; }
+.value-card-item:last-child { margin-bottom: 0; }
+.value-num { font-family: 'Montserrat', sans-serif; font-weight: 800; color: var(--orange); font-size: 1.1rem; }
+.value-card-item p { margin: 0; color: var(--ink-muted); font-size: 0.95rem; }
+
+/* ---------- Logotipo ---------- */
+.logo-showcase { max-width: 320px; }
+
+/* ---------- Elementos / construcción ---------- */
+.element-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.75rem;
+  height: 100%;
+  background: var(--surface);
+  transition: border-color 0.15s ease;
+}
+.element-card:hover { border-color: var(--orange-dim); }
+.element-icon { font-size: 1.9rem; color: var(--orange); margin-bottom: 0.9rem; display: block; }
+.element-card p { color: var(--ink-muted); margin-bottom: 0; font-size: 0.95rem; }
+
+/* ---------- Área de protección ---------- */
+.clearspace-box {
+  position: relative;
+  border: 1px dashed rgba(192,192,192,0.4);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--surface);
+}
+.clearspace-box img { max-width: 220px; }
+.clearspace-mark { position: absolute; width: 22px; height: 22px; border-color: var(--orange); border-style: solid; }
+.clearspace-mark.tl { top: 8px; left: 8px; border-width: 2px 0 0 2px; }
+.clearspace-mark.tr { top: 8px; right: 8px; border-width: 2px 2px 0 0; }
+.clearspace-mark.bl { bottom: 8px; left: 8px; border-width: 0 0 2px 2px; }
+.clearspace-mark.br { bottom: 8px; right: 8px; border-width: 0 2px 2px 0; }
+.clearspace-caption { color: var(--ink-muted); font-size: 0.9rem; margin-top: 0.85rem; }
+
+.rules-list { list-style: none; padding: 0; margin: 0; }
+.rules-list li { display: flex; gap: 1rem; margin-bottom: 1.4rem; }
+.rules-list li i { color: var(--orange); font-size: 1.1rem; margin-top: 0.2rem; }
+.rules-list strong { display: block; margin-bottom: 0.2rem; }
+.rules-list div { color: var(--ink-muted); font-size: 0.95rem; }
+
+/* ---------- Usos incorrectos ---------- */
+.wrong-card p {
+  margin-top: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.wrong-card p i { color: #E24C3D; margin-top: 0.15rem; }
+.wrong-frame {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  height: 170px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.wrong-frame img { max-width: 60%; max-height: 60%; }
+.wrong-deformado { transform: scaleX(1.9); }
+.wrong-color { filter: hue-rotate(140deg) saturate(3); }
+.wrong-bg-clara { background: #D9D9D6 !important; }
+.wrong-efectos { filter: drop-shadow(0 0 18px var(--orange)) drop-shadow(0 0 6px #fff) blur(0.4px); transform: rotate(-8deg); }
+
+/* ---------- Colores ---------- */
+.swatch {
+  border-radius: 6px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem;
+}
+.swatch-info h3 { font-size: 1.05rem; margin-bottom: 0.15rem; }
+.swatch-info p { margin: 0; font-family: monospace; font-size: 0.85rem; opacity: 0.85; }
+.swatch-info span { font-size: 0.8rem; opacity: 0.75; }
+.swatch-info.dark-text, .swatch-info.dark-text * { color: #14100b; }
+.swatch-info:not(.dark-text) { color: #fff; }
+.usage-note { color: var(--ink-muted); font-size: 0.9rem; margin-top: 1.75rem; max-width: 65ch; }
+
+/* ---------- Tipografía ---------- */
+.type-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2rem;
+  background: var(--surface);
+  height: 100%;
+}
+.type-label { color: var(--orange); font-size: 0.85rem; text-transform: none; margin-bottom: 0.35rem; }
+.type-name { font-size: 1.4rem; margin-bottom: 0.75rem; }
+.type-sample { font-size: 1.9rem; margin-bottom: 1.1rem; word-break: break-word; }
+.font-body { font-family: 'Roboto', sans-serif; font-weight: 400; }
+.type-desc { color: var(--ink-muted); font-size: 0.92rem; margin: 0; }
+
+/* ---------- Aplicaciones ---------- */
+.mockup-label { color: var(--silver); font-size: 0.85rem; margin-bottom: 0.6rem; }
+
+.mockup-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  aspect-ratio: 16 / 9.5;
+  padding: 1.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.mockup-mark { width: 42px; }
+.mockup-name { font-family: 'Montserrat', sans-serif; font-weight: 700; margin: 0; font-size: 1rem; }
+.mockup-role { color: var(--ink-muted); font-size: 0.82rem; margin: 0; }
+.mockup-bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 6px; background: var(--orange); }
+
+.mockup-patch {
+  background: var(--surface-2);
+  border: 3px dashed var(--silver);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.mockup-patch img { width: 60%; }
+
+.mockup-van {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  aspect-ratio: 16 / 9.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1.5rem 0.5rem;
+}
+.mockup-van-body { background: #202020; border-radius: 6px; padding: 1.2rem; display: flex; align-items: center; justify-content: center; }
+.mockup-van-body img { width: 65%; }
+.mockup-van-wheels { display: flex; justify-content: space-around; padding: 0.5rem 1.5rem 0; }
+.mockup-van-wheels span { width: 22px; height: 22px; border-radius: 50%; background: #333; border: 3px solid #444; }
+
+/* ---------- Footer / contacto ---------- */
+.contact-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.75rem;
+  background: var(--surface);
+}
+.contact-label { color: var(--orange); font-size: 0.8rem; margin-bottom: 0.75rem; }
+.contact-card p { color: var(--ink-muted); font-size: 0.92rem; margin-bottom: 0.6rem; }
+.contact-card i { color: var(--silver); width: 1.4rem; }
+.fine-print { color: var(--ink-muted); font-size: 0.8rem; margin-top: 1.5rem; }
+hr { border-color: var(--border); }
+
+/* ---------- Accesibilidad / responsive ---------- */
+a:focus-visible, .btn-scroll:focus-visible, .nav-link:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .element-card, .btn-scroll { transition: none; }
+}
+
+@media (max-width: 991.98px) {
+  .section { padding: 4rem 0; }
+}
