@@ -133,7 +133,6 @@ a { color: var(--orange); }
   background: var(--surface);
   transition: border-color 0.15s ease;
 }
-.element-card:hover { border-color: var(--orange-dim); }
 .element-icon { font-size: 1.9rem; color: var(--orange); margin-bottom: 0.9rem; display: block; }
 .element-card p { color: var(--ink-muted); margin-bottom: 0; font-size: 0.95rem; }
 
