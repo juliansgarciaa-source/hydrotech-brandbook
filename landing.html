@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HydroTech: la app móvil que reúne medidas, fotos, planos y órdenes de servicio de tus componentes hidráulicos y metalmecánicos.">
+<link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml">
+<title>HydroTech | Toda la información técnica de tus componentes en el celular</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="#">Hydro<em>Tech</em></a><div><a href="#beneficios">Beneficios</a><a href="#como">Cómo funciona</a><a href="#faq">Preguntas</a></div></nav>
+<header class="hero">
+<div>
+<h1><span>Cero cuadernos.</span>Todo tu taller en una sola ficha.</h1>
+<p class="lead">Mangueras, cilindros y piezas de torno con sus medidas, fotos y planos, más las órdenes de servicio de tu maquinaria pesada, todo en la app móvil de HydroTech.</p>
+<form class="form lead" id="heroForm">
+<div><label for="h-nombre">Nombre</label><input type="text" id="h-nombre" name="nombre" autocomplete="name" required></div>
+<div><label for="h-correo">Correo electrónico</label><input type="email" id="h-correo" name="correo" autocomplete="email" required></div>
+<label class="check"><input type="checkbox" required><span>Autorizo el tratamiento de mis datos personales para que HydroTech me envíe información sobre la app.</span></label>
+<button class="btn" type="submit">Pedir mi demo</button>
+</form>
+<div class="form-msg" role="status"></div>
+<a class="more" href="#como">Ver cómo funciona</a>
+</div>
+<img src="assets/logo-full.svg" alt="Logotipo de HydroTech: monograma H-T hecho con tuberías dentro de una carpeta">
+</header>
+</div>
+
+<section id="beneficios"><div class="wrap">
+<h2>Menos búsqueda, más trabajo hecho</h2>
+<ul class="feat">
+<li><strong>Todo en un solo lugar</strong><span>Medidas, fotos, planos y datos técnicos de cada componente, sin papeles dispersos.</span></li>
+<li><strong>Consulta desde el celular</strong><span>El técnico encuentra la ficha en campo, en segundos.</span></li>
+<li><strong>Órdenes con seguimiento</strong><span>Asignaciones, estados de trabajo y evidencias en cada servicio.</span></li>
+<li><strong>Control por rol</strong><span>Administrador, supervisor y técnico ven solo lo que les corresponde.</span></li>
+<li><strong>Varias empresas, datos separados</strong><span>Cada cliente con sus usuarios, máquinas y componentes.</span></li>
+<li><strong>Historial de auditoría</strong><span>Sabes quién hizo cada operación y cuándo.</span></li>
+</ul></div></section>
+
+<section class="band"><div class="wrap"><h2>Pide una demo de HydroTech</h2><a class="btn" href="#contacto">Solicitar demo</a></div></section>
+
+<section id="prueba"><div class="wrap">
+<h2>Hecha con tecnología probada</h2>
+<p>HydroTech se construye sobre herramientas ampliamente usadas en la industria del software.</p>
+<div class="chips"><span>React Native</span><span>Node.js</span><span>PostgreSQL</span></div>
+<p class="note">Estamos buscando las primeras empresas piloto. Aquí aparecerán sus testimonios.</p>
+</div></section>
+
+<section id="como"><div class="wrap">
+<h2>Así funciona HydroTech</h2>
+<ol class="steps">
+<li><div><strong>El administrador crea la empresa cliente</strong> y sus usuarios.</div></li>
+<li><div><strong>El supervisor registra la maquinaria</strong> y sus componentes: mangueras, piezas de torno y cilindros.</div></li>
+<li><div><strong>El supervisor genera una orden de servicio</strong> y la asigna a un técnico.</div></li>
+<li><div><strong>El técnico consulta la ficha, avanza el estado</strong> y sube las evidencias del trabajo.</div></li>
+</ol></div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué puedo registrar en HydroTech?</summary><p>Maquinaria y vehículos, y sus componentes: mangueras hidráulicas, piezas fabricadas en torno y cilindros hidráulicos, con medidas, fotos y planos.</p></details>
+<details><summary>¿Puedo manejar varias empresas en la misma app?</summary><p>Sí. HydroTech es multiempresa: cada cliente tiene sus propios usuarios y su información separada.</p></details>
+<details><summary>¿Qué puede hacer cada rol?</summary><p>El administrador gestiona empresas y usuarios, el supervisor registra componentes y asigna órdenes, y el técnico consulta fichas y ejecuta las órdenes.</p></details>
+<details><summary>¿Incluye asistente de IA?</summary><p>Sí, un asistente básico para consultar la información que ya guardaste en la app.</p></details>
+<details><summary>¿Ya está disponible?</summary><p>Está en desarrollo. Escríbenos para solicitar una demo o ser empresa piloto.</p></details>
+</div></section>
+
+<section id="contacto" class="prop"><div class="wrap">
+<h2>Una medida perdida puede parar tu máquina.</h2>
+<p style="margin:0 auto">Guarda cada medida, foto y plano en un solo lugar. Déjanos tus datos y te escribimos con la demo de HydroTech.</p>
+<form class="form lead" id="leadForm">
+<div><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" autocomplete="name" required></div>
+<div><label for="correo">Correo electrónico</label><input type="email" id="correo" name="correo" autocomplete="email" required></div>
+<div><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa" autocomplete="organization" required></div>
+<div><label for="tel">Teléfono <span class="opt">(opcional)</span></label><input type="tel" id="tel" name="telefono" autocomplete="tel"></div>
+<div><label for="msg">¿Qué te interesa saber? <span class="opt">(opcional)</span></label><textarea id="msg" name="mensaje"></textarea></div>
+<label class="check"><input type="checkbox" id="ok" required><span>Autorizo el tratamiento de mis datos personales para que HydroTech me envíe información sobre la app.</span></label>
+<button class="btn" type="submit">Quiero mi demo</button>
+</form>
+<div class="form-msg" role="status"></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 HydroTech · Proyecto de grado</div></footer>
+<script src="js/landing.js" defer></script>
+</body>
+</html>
