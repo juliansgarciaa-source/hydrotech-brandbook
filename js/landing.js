@@ -1,7 +1,7 @@
 // Configuración del formulario:
 // EMAIL: correo donde quieres recibir los datos (modo "abrir correo").
 // ENDPOINT: dirección de Formspree u otro servicio; si la llenas, los datos se envían solos.
-const EMAIL="tucorreo@ejemplo.com";const ENDPOINT="";
+const EMAIL="tucorreo@ejemplo.com";const ENDPOINT="https://formspree.io/f/mvkglvvn";
 document.querySelectorAll("form.lead").forEach(f=>{const m=f.nextElementSibling;
 f.addEventListener("submit",async e=>{e.preventDefault();
 const v=n=>(f.elements[n]?f.elements[n].value.trim():"");
